@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF Form Format</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></Script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.min.js"></Script>
+    <script type="module" src="script.js"></script>
+</head>
+
+<body class="cert-container print-m-0">
+<div class="toolbar no-print py-2">
+    <button class="btn btn-info" onclick="window.print()">
+        Imprimir
+    </button>
+    <button class="btn btn-danger" id="downloadPDF">Descargar PDF</button>
+</div>
+    <header id="content2">
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text">
+                        <br><span>What is Lorem Ipsum?</span><br><span>Why do we use it?</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <div class="container mt-3">
+        <p class="text-center titulo m-0 p-0"><b>Lorem ipsum dolor sit amet, consectetur adipiscing</b></p>
+        <p class="text-center titulo m-0 p-0">
+            <b>elit, sed do eiusmod tempor incididunt ut labore</b></p>
+        <p class="text-center titulo m-0 p-0"><b>et dolore magna aliqua. Ut enim</b></p>
+    </div>
+    <br>
+    <table cellspacing="0" style="border-spacing: 0;">
+        <tbody class="text-center text-uppercase">
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>1.- <u>DATOS</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>NOMBRE:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="3">(APELLIDO PATERNO</td>
+                <td colspan="2">APELLIDO MATERNO</td>
+                <td colspan="2">NOMBRE(S))</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>DOMICILIO:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="3">(CALLE</td>
+                <td colspan="2">NÚMERO</td>
+                <td colspan="2">COLONIA)</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="3" class="subrayar">MORELOS</td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="3">(DELEGACIÓN O MUNICIPIO</td>
+                <td colspan="3">ENTIDAD FEDERATIVA</td>
+                <td colspan="2">CÓDIGO POSTAL</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>TELÉFONO):</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="5"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="subrayar text-left"><b>FECHA Y LUGAR NACIMIENTO:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td colspan="3">(AÑO MES DÍA)</td>
+                <td colspan="2">(LUGAR)</td>
+            </tr>
+            <tr>
+                <td colspan="1">SEXO: </td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1">EDAD: </td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1">ESTADO: </td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1">ESTADO CIVIL: </td>
+                <td colspan="1" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1">ESCOLARIDAD:</td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1">OCUPACIÓN: </td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1">INGRESO: </td>
+                <td colspan="1" class="subrayar">$</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2 mr-0 pr-0" class="subrayar text-left"><b>APOYO EN ESPECIE:</b></td>
+                <td colspan="6" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota"><b>DECLARO:</b>
+                    L<span class="text-lowercase">orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                </td>
+            </tr>
+            <tr class="my-2">
+            <td colspan="8" class="text-left bottom titulo"><b>2.- <u>DATOS DEL SOLICITANTE</u>:</b></td>
+        </tr>
+        <tr>
+            <td colspan="1" class="text-left"><b>NOMBRE:</b></td>
+            <td colspan="3" class="subrayar"></td>
+            <td colspan="2" class="subrayar"></td>
+            <td colspan="2" class="subrayar"></td>
+        </tr>
+        <tr>
+            <td colspan="1"></td>
+            <td colspan="3">(APELLIDO PATERNO</td>
+            <td colspan="2">APELLIDO MATERNO</td>
+            <td colspan="2">NOMBRE(S)</td>
+        </tr>
+        <tr>
+            <td colspan="1" class="text-left"><b>TELÉFONO):</b></td>
+            <td colspan="2" class="subrayar"></td>
+            <td colspan="5"></td>
+        </tr>
+        <tr>
+            <td colspan="8"></td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+    <div class="titulo text-center">
+        1
+    </div>
+    <footer>
+        <img src="https://dummyimage.com/500x60/d8d9e8/535354">
+        <span class="nota-sm ml-1 pb-2">PDF Form Format</span>
+    </footer>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text">
+                        <br><span>What is Lorem Ipsum?</span><br><span>Why do we use it?</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <table cellspacing="0" style="border-spacing: 0;">
+        <tbody class="text-center">
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="text-left titulo"><b>3.- <u>Lorem Ipsum</u>:</b> (Lorem Ipsum)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table cellspacing="0" style="border-spacing: 0;" class="table table-bordered text-uppercase">
+        <tbody class="text-center">
+            <tr class="table-active titulo">
+                <th scope="col">NOMBRE</th>
+                <th scope="col">EDAD</th>
+                <th scope="col">PARENTESCO</th>
+                <th scope="col">OCUPACIÓN</th>
+                <th scope="col">INGRESO</th>
+            </tr>
+            <tr>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+            </tr>
+            <tr>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+                <td scope="col"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table cellspacing="0" style="border-spacing: 0;" class="text-uppercase">
+        <tbody class="text-center">
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-left"><b>NÚMERO TOTAL DE MIEMBROS:</b>
+                    <span class="subrayar px-3 mx-2"></span>
+                </td>
+                <td colspan="4" class="text-left"><b>INGRESO TOTAL MENSUAL FAMILIAR: $</b>
+                    <span class="subrayar px-3 mx-2"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="text-left titulo"><b>4.- <u>SITUACIÓN ECONÓMICA</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left titulo"><small><b>GASTO MENSUAL FAMILIAR.</b></small></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left">ALIMENTACIÓN </td>
+                <td colspan="2" class="subrayar">$</td>
+                <td colspan="2" class="text-left">SALUD </td>
+                <td colspan="2" class=" subrayar">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left">VIVIENDA(MANTENIMIENTO)</td>
+                <td colspan="2" class="subrayar">$</td>
+                <td colspan="2" class="text-left">EDUCACIÓN </td>
+                <td colspan="2" class=" subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left">SERVICIOS PÚBLICOS </td>
+                <td colspan="2" class="subrayar">$</td>
+                <td colspan="2" class="text-left">OTROS </td>
+                <td colspan="2" class=" subrayar">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left">TRANSPORTE</td>
+                <td colspan="2" class="subrayar">$</td>
+                <td colspan="2" class="text-left">VIVIENDA (RENTA) </td>
+                <td colspan="2" class="subrayar">$</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"><b>TOTAL DE EGRESOS MENSUALES FAMILIARES</b></td>
+                <td colspan="2" class="subrayar"><b>$</b></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="text-left titulo"><b>5.- <u>ALIMENTACIÓN</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>DESAYUNO:</b></td>
+                <td colspan="7" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>COMIDA:</b></td>
+                <td colspan="7" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>CENA:</b></td>
+                <td colspan="7" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left titulo"><b>6.- <u>VIVIENDA</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="1"><b>ZONA</b></td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1"><b>TIPO DE VIVIENDA</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1"><b>RÉGIMEN DE PROPIEDAD</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+    <div class="titulo text-center">
+        2
+    </div>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text">
+                        <br><span>What is Lorem Ipsum?</span><br><span>Why do we use it?</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="2" class="text-left"><b>SERVICIOS PÚBLICOS:</b></td>
+                <td colspan="1">LUZ ( )</td>
+                <td colspan="1">AGUA ( )</td>
+                <td colspan="1">PAVIMENTO ( )</td>
+                <td colspan="1">DRENAJE ( )</td>
+                <td colspan="1">TELÉFONO ( )</td>
+                <td colspan="1">TRANSPORTE ( )</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-left"><b>SERVICIOS CON LOS QUE CUENTA:</b></td>
+                <td colspan="1">LUZ ( )</td>
+                <td colspan="1">AGUA ( )</td>
+                <td colspan="1">GAS ( )</td>
+                <td colspan="1">DRENAJE ( )</td>
+                <td colspan="1">TELÉFONO ( )</td>
+            </tr>
+            <tr>
+                <td colspan="1">OTROS:</td>
+                <td colspan="7" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>NÚMERO DE ESPACIOS:</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1">SALA ( )</td>
+                <td colspan="1">COMEDOR ( )</td>
+                <td colspan="1">RÉCAMARA ( )</td>
+                <td colspan="1">COCINA ( )</td>
+            </tr>
+            <tr>
+                <td colspan="1">BAÑOS:</td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="1">OTROS:</td>
+                <td colspan="3" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>TIPO DE CONSTRUCCIÓN:</b></td>
+                <td colspan="1">PAREDES: </td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1">TECHO: </td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1">PISO: </td>
+                <td colspan="1" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left titulo"><b>7.- <u>SALUD DEL BENEFICIARIO</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>PADECIMIENTO ACTUAL</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="1" class="text-left"><b>CAUSA</b></td>
+                <td colspan="3" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>NOMBRE DE LA TRABAJADORA SOCIAL:</b></td>
+                <td colspan="6" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>DEPENDENCIA CANALIZADORA:</b></td>
+                <td colspan="6" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>DIRECCIÓN Y TELÉFONO:</b></td>
+                <td colspan="6" class="subrayar text-left ">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="subrayar text-left"><b>FECHA Y LUGAR DE APLICACIÓN:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="3" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="3">(AÑO MES DÍA)</td>
+                <td colspan="3">(LUGAR)</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>EVALUACIÓN GENERAL DEL TRABAJO SOCIAL:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" height="30"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="subrayar mx-4 px-2"></td>
+                <td colspan="2"></td>
+                <td colspan="3" class="subrayar mx-4 px-2"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mx-4 px-2"><b>NOMBRE Y FIRMA DEL ENTREVISTADO</b></td>
+                <td colspan="2"></td>
+                <td colspan="3" class="mx-4 px-2"><b>NOMBRE COMPLETO, CÉDULA PROFESIONAL Y FIRMA DE LA TRABAJADORA SOCIAL</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <div class="titulo text-center">
+        3
+    </div>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text">
+                        <br><span>What is Lorem Ipsum?</span><br><span>Why do we use it?</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    </tbody>
+    </table>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="8"><b>AVISO DE PRIVACIDAD</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-sm">
+                    <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum:
+                    </p>
+                    <p class="text-normal"><b>¿Lorem ipsum dolor sit amet?</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                    <ul class="mb-1">
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                    <p class="text-normal"><b>¿Lorem ipsum dolor sit amet?</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="mx-2 mb-1">
+        <table cellspacing="0" style="border-spacing: 0;" class="table table-bordered table-sm mb-1">
+            <tbody>
+                <tr>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                </tr>
+                <tr>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                    <td scope="col">• Lorem ipsum dolor</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="text-normal text-style m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:
+    </p>
+    <div class="mx-4">
+        <table cellspacing="0" style="border-spacing: 0;" class="table table-bordered table-sm mn-1">
+            <tbody>
+                <tr>
+                    <td scope="col">• Lorem </td>
+                    <td scope="col">• Lorem </td>
+                    <td scope="col">• Lorem </td>
+                </tr>
+                <tr>
+                    <td scope="col">• Lorem </td>
+                    <td scope="col">• Lorem </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table style="border-spacing: 0;" class="text-uppercase my-0 py-0">
+        <tbody>
+            <tr>
+                <td colspan="8" class="nota-sm">
+                    <b>The standard Lorem Ipsum passage, used since the 1500s</b>
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<br><br>
+<b>Section 1.10.32 of "de Finibus Bonorum et Malorum" written by Cicero in 45 BC</b><br> 
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                </td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="1"></td>
+                <td colspan="6" class="subrayar mx-2 px-2 td-sm"></td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="6" class="mx-2 px-2 td-sm">
+                    <b>1.- Nombre Completo<br>2.- Firma</b>
+                </td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-sm">
+                    <p class="text-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    </tbody>
+    </table>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="8" class="text-center bottom titulo2"><b>CARTA COMPROMISO</b></td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="1">Lugar:</td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="1">Fecha:</td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="text-left titulo text-normal"><b>Lorem ipsum dolor sit amet<br>
+                    Lorem ipsum dolor sit amet<br>
+                    Lorem ipsum dolor sit amet<br>
+                    Lorem ipsum dolor sit amet</b>
+                </td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="titulo text-normal text-justify">
+                    The standard Lorem Ipsum passage ___________________, used since the 1500s
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<br><br>
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" height="60"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-center titulo">ATENTAMENTE</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="2"></td>
+                <td colspan="4" class="subrayar titulo"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="titulo"><b>Firma y nombre</b></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-sm">
+                    <p class="text-normal">(Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud).
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    </tbody>
+    </table>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="8" class="text-center bottom titulo2">
+                    <b>FORMULARIO</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="titulo text-normal text-justify">
+                    Lorem ipsum dolor sit amet ______________________, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left titulo">ATENTAMENTE</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="1" class="text-left text-normal">Nombre</td>
+                <td colspan="3" class="subrayar titulo"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="1" class="text-left text-normal">Firma</td>
+                <td colspan="3" class="subrayar titulo"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="1" class="text-left text-normal">Correo</td>
+                <td colspan="3" class="subrayar titulo"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="1" class="text-left text-normal">Teléfono</td>
+                <td colspan="3" class="subrayar titulo"></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1" class="titulo text-normal"> Morelos, a</td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1" class="titulo text-normal"> del mes de</td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1" class="titulo text-normal"> del 2022.</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-sm">
+                    <p class="text-normal">
+                        <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="2" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="160"></td>
+                    <td colspan="4" class="text-center header-text2"><span><b>Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet</b></span>
+                    </td>
+                    <td colspan="2" class="text-center"><br><span>Lorem ipsum dolor<br>Lorem</span><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <table cellspacing="0" style="border-spacing: 0;">
+        <tbody class="text-center">
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="titulo bottom">
+                    <b><u>RECIBO DE APOYO</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>NOMBRE:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6" class="text-normal td-sm pt-0 pb-2 text-muted">Nombre(s), Apellido Paterno, Apellido
+                    Materno</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>TUTOR O PERSONA QUE RECIBE:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6" class="text-normal td-sm pt-0 pb-2 text-muted">Nombre(s), Apellido Paterno, Apellido
+                    Materno</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>NÚMERO DE EXPEDIENTE:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6" class="text-normal td-sm pt-0 pb-2 text-muted">Asignado por la UBPE</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>AYUDA OTORGADA:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="6" class="text-normal td-sm pt-0 pb-2 text-muted">Asignado por la UBP</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>TIPO DE FINANCIAMIENTO:</b></td>
+                <td colspan="1" class="text-right"><span class="checke">X</span></td>
+                <td colspan="2" class="text-left px-2">DONADO</td>
+                <td colspan="1" class="text-right"><span class="checke"></span></td>
+                <td colspan="2" class="text-left px-2">PAGADO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>FECHA DE EVENTO:</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="text-left"><b>FECHA DE ENTREGA:</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="2" class="text-normal td-sm pt-0 pb-2 text-muted">Indicado por UBP</td>
+                <td colspan="2"></td>
+                <td colspan="2" class="text-normal td-sm pt-0 pb-2 text-muted">Indicado por UBP</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>CANALIZADO POR:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="titulo"><b><u>ESPECIFICACIONES</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left">
+                    <b><u>AUXILIAR AUDITIVO</u></b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="1" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear"></td>
+                <td colspan="1" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="1" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+                <td colspan="2" class="bordear py-0">Lorem ipsum</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear"></td>
+                <td colspan="1" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+                <td colspan="2" class="bordear"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left">
+                    <b><u>LENTES GRADUADOS</u></b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear py-0">Adquisición</td>
+                <td colspan="1" class="bordear py-0">Bifocal</td>
+                <td colspan="1" class="bordear py-0">Cercana</td>
+                <td colspan="1" class="bordear py-0">Lejana</td>
+                <td colspan="2" class="bordear py-0">Graduación</td>
+                <td colspan="2" class="bordear py-0">Modelo de Armazón</td>
+            </tr>
+            <tr>
+                <td colspan="1" rowspan="2" class="bordear"></td>
+                <td colspan="1" rowspan="2" class="bordear"></td>
+                <td colspan="1" rowspan="2" class="bordear"></td>
+                <td colspan="1" rowspan="2" class="bordear"></td>
+                <td colspan="1" class="bordear py-0">O.D</td>
+                <td colspan="1" class="bordear py-0">O.I</td>
+                <td colspan="2" rowspan="2" class="bordear"></td>
+            </tr>
+            <tr>
+                <td class="bordear">x</td>
+                <td class="bordear">x</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="bordear"><b>RECIBIDO Y APROBACIÓN *</b></td>
+                <td colspan="4" class="bordear"><b>MÉDICO O ESPECIALISTA TRATANTE</b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="bordear py-0">Huella</td>
+                <td colspan="3" class="bordear py-0">Firma</td>
+                <td colspan="1" class="bordear py-0">Huella</td>
+                <td colspan="3" class="bordear py-0">Firma</td>
+            </tr>
+            <tr>
+                <td colspan="1" height="30" class="bordear"><b></b></td>
+                <td colspan="3" height="30" class="bordear"><b></b></td>
+                <td colspan="1" height="30" class="bordear"><b></b></td>
+                <td colspan="3" height="30" class="bordear"><b></b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota-xs">
+                    <p class="text-normal">* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-center py-0"><b>AUTORIZACIÓN</b></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="2"></td>
+                <td colspan="4" class="subrayar"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="py-0"><span class="nota-sm"><b>C.</b></span></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="py-0">
+                    <span class="nota-sm">Lorem ipsum dolor sit amet</span></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="p-0">
+                    <span class="nota-sm">Lorem ipsum dolor sit amet</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="4" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="200"></td>
+                    <td colspan="4" class="text-right header-text"></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <br>
+    <table cellspacing="0" style="border-spacing: 0;">
+        <tbody class="text-center">
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="titulo2 bottom"><b><u>RECIBO</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>NOMBRE:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>AYUDA OTORGADA POR ÚNICA VEZ DE MANERA GRATUITA:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>CANALIZADO POR:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>DONADO POR:</b></td>
+                <td colspan="6" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>FECHA DE ENTREGA DE LA AYUDA:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>RECIBE: *</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>RELACIÓN O PARENTESCO CON EL BENEFICIARIO:</b></td>
+                <td colspan="6" class="subrayar">AGREGAR CAMPO</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota">
+                    <p class="text-normal"><b>DECLARATORIA:</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="2"></td>
+                <td colspan="4" class="subrayar"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="py-0"><b>Firma y/o huella</b></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="nota">
+                    <p class="text-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="8"></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="8" class="text-center bottom titulo2"><b>SOLICITUD</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="20"></td>
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td colspan="1">Fecha:</td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="20"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left titulo text-normal"><b>C.<b><br>
+                    Lorem ipsum dolor sit amet<br>
+                    Lorem ipsum dolor sit amet<br>
+                    <b>PRESENTE:</b>
+                </td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="20"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="titulo text-normal text-justify">
+                    The standard Lorem Ipsum passage ___________________, used since the 1500s
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<br><br>
+Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" height="60"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-center titulo">ATENTAMENTE</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="2"></td>
+                <td colspan="4" class="subrayar titulo"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="titulo"><b></b></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="2" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="160"></td>
+                    <td colspan="4" class="text-center header-text2"><span><b><br>
+                        Lorem ipsum dolor sit amet</b><br>
+                        Lorem ipsum dolor sit amet,</span>
+                    </td>
+                    <td colspan="2" class="text-center"><br><span>Lorem ipsum <br>Lorem ipsum</span><br></td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <br>
+    <table style="border-spacing: 0;" class="text-uppercase">
+        <tbody>
+            <tr>
+                <td colspan="8" class="text-left"><b>1.- FUE INGRESADA POR:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>A QUIEN LE DIAGNOSTICARON:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>POR LO QUE REQUIERE DE:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>2.- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">a) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">b) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">c) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">d) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">e) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">f) </td>
+                <td colspan="7" class="text-left">Lorem ipsum.</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="subrayar text-normal mx-2 text-left">g) </td>
+                <td colspan="2" class="text-left">Lorem (ESPECIFICAR):</td>
+                <td colspan="5" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>3.- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="1" class="text-right"><span class="checke">X</span></td>
+                <td colspan="2" class="text-left px-2">ACREDITA</td>
+                <td colspan="1" class="text-right"><span class="checke"></span></td>
+                <td colspan="2" class="text-left px-2">NO ACREDITA</td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-center titulo"><b>ELABORÓ</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr class="mt-1">
+                <td colspan="2"></td>
+                <td colspan="4" class="subrayar"></td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4" class="titulo">
+                    <b>NOMBRE Y FIRMA</b><br>
+                    CARGO
+                </td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="20"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left titulo"><b>OBSERVACIONES:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar text-left" height="40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="p-0">
+                    <span class="nota-sm text-normal text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <header>
+        <table>
+            <tbody class="header">
+                <tr>
+                    <td colspan="2" class="text-left"><img src="https://dummyimage.com/400x150/d8d9e8/535354" width="160"></td>
+                    <td colspan="4" class="text-center header-text2"><span><b>Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet<br>
+                        Lorem ipsum dolor sit amet</b></span>
+                    </td>
+                    <td colspan="2" class="text-center"><br><span class="foto">Foto<br></span><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <br>
+    <table cellspacing="0" style="border-spacing: 0;">
+        <tbody class="text-center">
+            <tr class="my-2">
+                <td colspan="8" class="titulo2 bottom"><b><u>Lorem ipsum dolor sit amet</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class=""><b>Fecha:</b></td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="2" class=""><b>Número de Expediente:</b></td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="2" class=""><b>Nivel:</b></td>
+                <td colspan="1" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="titulo bottom"><b><u>DATOS GENERALES.</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Nombre:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><span class="mr-1"><b>Sexo:</b></span>
+                    <span class="mx-2">M</span><span class="mr-1">(X)</span>
+                    <span class="mx-2">F</span><span class="mr-1">( )</span>
+                </td>
+                <td colspan="1"><b>Edad</b></td>
+                <td colspan="1" class="subrayar">24</td>
+                <td colspan="2"><b>Fecha de Nacimiento</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="1"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="text-sm py-0">Día Mes Año</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Lugar de nacimiento:</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1"><b>Nacionalidad:</b></td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1"><b>Estado civil:</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Religión:</b></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="1"><b>Grupo étnico:</b></td>
+                <td colspan="1" class="subrayar"></td>
+                <td colspan="1"><b>Lengua:</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Escolaridad:</b></td>
+                <td colspan="4" class="subrayar"></td>
+                <td colspan="1"><b>Ocupación:</b></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Domicilio:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="py-0"></td>
+                <td colspan="3" class="py-0">Calle   </td>
+                <td colspan="2" class="py-0">No ext. No. int</td>
+                <td colspan="2" class="py-0">Colonia</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar">MORELOS</td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="py-0">Municipio</td>
+                <td colspan="2" class="py-0">Entidad Federativa</td>
+                <td colspan="2" class="py-0">Código Postal</td>
+                <td colspan="2" class="py-0">Teléfono</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Referencias para llegar a su domicilio:</b></td>
+                <td colspan="6" class="subrayar">xxx</td>
+            </tr>
+             <tr>
+                <td colspan="2" class="text-left"><b>Dejar recado en:</b></td>
+                <td colspan="6" class="subrayar">xxx</td>
+            </tr>
+            <tr class="my-2">
+                <td colspan="8" class="bottom text-left"><b><u>Derechohabiencia:</u></b></td>
+            </tr>
+            <tr>
+                <td colspan="2">IMSS ( )</td>
+                <td colspan="2">ISSSTE ( )</td>
+                <td colspan="2">Seguro Popular ( )</td>
+                <td colspan="2">Otros: __________________</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Nombre del familiar o responsable:</b></td>
+                <td colspan="3" class="subrayar">xxx</td>
+                <td colspan="1"><b>Parenteso:</b></td>
+                <td colspan="2" class="subrayar">xxx</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Domicilio:</b></td>
+                <td colspan="3" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="1" class="py-0"></td>
+                <td colspan="3" class="py-0">Calle   </td>
+                <td colspan="2" class="py-0">No ext. No. int</td>
+                <td colspan="2" class="py-0">Colonia</td>
+            </tr>
+             <tr>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar">MORELOS</td>
+                <td colspan="2" class="subrayar"></td>
+                <td colspan="2" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="py-0">Municipio</td>
+                <td colspan="2" class="py-0">Entidad Federativa</td>
+                <td colspan="2" class="py-0">Código Postal</td>
+                <td colspan="2" class="py-0">Teléfono</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Referencias para llegar a su domicilio:</b></td>
+                <td colspan="6" class="subrayar">xxx</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>I.- <u>INGRESO FAMILIAR MENSUAL</u>:</b>  (parámetro a evaluar)</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Paciente:</b></td>
+                <td colspan="2" class="subrayar text-left">$</td>
+                <td colspan="1" class="text-left"><b>Padre:</b></td>
+                <td colspan="1" class="subrayar text-left">$</td>
+                <td colspan="1" class="text-left"><b>Madre:</b></td>
+                <td colspan="2" class="subrayar text-left">$</td>
+            </tr>
+            <tr>
+                <td colspan="1" class="text-left"><b>Esposo (a) :</b></td>
+                <td colspan="2" class="subrayar text-left">$</td>
+                <td colspan="1" class="text-left"><b>Hijos:</b></td>
+                <td colspan="1" class="subrayar text-left">$</td>
+                <td colspan="1" class="text-left"><b>Otros:</b></td>
+                <td colspan="2" class="subrayar text-left">$</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-left"><b>Número de dependientes económicos:</b></td>
+                <td colspan="2" class="subrayar text-left"></td>
+                <td colspan="1" class="text-left"><b>Total:</b></td>
+                <td colspan="2" class="subrayar text-left">$</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8">1</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="page-break"></div>
+        <table>
+            <tbody>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>II.- <u>OCUPACIÓN</u>:</b>  (parámetro a evaluar)</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Nombre del proveedor económico:</b></td>
+                <td colspan="6" class="subrayar">xxx</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Parentesco:</b></td>
+                <td colspan="2" class="subrayar">xxx</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="bordear"><b>Grupo Ocupacional:</b></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Sin ocupación</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Trabajadores no calificados</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Jubilados y Pensionados</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Becarios, así como trabajadores de los servicios y vendedores de comercios y mercados</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Oficiales, Operarios y Artesanos de Artes mecánicas y otros oficios</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Operadores de instalaciones, maquinas y montadores</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Agricultores y trabajadores calificados agropecuarios y pesqueros</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Empleados de oficina</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Técnicos Profesionistas de nivel medio</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Profesionistas, científicos e intelectuales</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="7" class="bordear py-0 text-left">Fuerzas armadas y ejecutivos e inversionistas</td>
+                <td colspan="1" class="bordear py-0"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Especifique ocupación:</b></td>
+                <td colspan="2" class="subrayar">xxx</td>
+                <td colspan="2">Tipo de Trabajo:</td>
+                <td colspan="2"><span class="mx-2">Eventual</span><span class="mr-1">(X)</span>
+                    <span class="mx-2">Fijo</span><span class="mr-1">( )</span></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>III.- <u>EGRESO FAMILIAR MENSUAL</u>:</b>  (parámetro a evaluar)</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear"><b>Concepto</b></td>
+                <td colspan="2" class="bordear"><b>Monto</b></td>
+                <td colspan="2" class="bordear"><b>Concepto</b></td>
+                <td colspan="2" class="bordear"><b>Monto</b></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Alimentación:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Transporte:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Renta:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Gasolina:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Luz:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Vestuario:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Agua:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Medicamentos:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Teléfono:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Colegiaturas:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">Gas:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+                <td colspan="2" class="bordear py-0 text-left">Otros:</td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left"></td>
+                <td colspan="2" class="bordear py-0"></td>
+                <td colspan="2" class="bordear py-0 text-left"><b>Total</b></td>
+                <td colspan="2" class="bordear py-0">$</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>IV.- <u>VIVIENDA</u>:</b>  (parámetro a evaluar)</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Tipo de tenencia:</b></td>
+            </tr>
+            <tr>
+                <td colspan="2">Bajo protección Institucional ( )</td>
+                <td colspan="2">Rentada, Hipotecada ( )</td>
+                <td colspan="2">Prestada ( )</td>
+                <td colspan="2">Propia pagada ()</td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Tipo de vivienda:</b></td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-left">Vivienda móvil, casa rural, refugio, cuarto redondo sin vivienda, local no construido para habitación ( )</td>
+                <td colspan="4" class="text-left">Vecindad o cuarto de servicio, azotea ( )</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-left">Departamento a casa popular en unidades habitacionales (interés social).  ( )</td>
+                <td colspan="4" class="text-left">Departamento a casa clase media con financiamiento propio o hipoteca ( )</td>
+            </tr>
+            <tr>
+                <td colspan="4" class="text-left">Departamento a casa residencial. ( )</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Servicios Públicos:</b></td>
+            </tr>
+            <tr>
+                <td colspan="2">Agua ( )</td>
+                <td colspan="2">Drenaje ( )</td>
+                <td colspan="2">Alumbrado Público ( )</td>
+                <td colspan="2">Pavimentación ()</td>
+            </tr>
+            <tr>
+                <td colspan="2">Recolección de basura ( )</td>
+                <td colspan="2">Teléfono Público  ( )</td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+             <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr>
+                <td colspan="8">2</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="page-break"></div>
+        <table>
+            <tbody>
+            <tr>
+                <td colspan="8" class="text-left"><b>Servicios Intradomiciliarios:</b></td>
+            </tr>
+            <tr>
+                <td colspan="1">Agua ( )</td>
+                <td colspan="1">Luz ( )</td>
+                <td colspan="1">Drenaje ( )</td>
+                <td colspan="1">Teléfono ()</td>
+                <td colspan="1">Otros: </td>
+                <td colspan="3" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Material de construcción de la vivienda: </b></td>
+            </tr>
+            <tr>
+                <td colspan="3">Lamina, Madera, material de la región ( )</td>
+                <td colspan="2">Mixta ( )</td>
+                <td colspan="2">Mampostería ( )</td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Número de dormitorios: </b></td>
+            </tr>
+            <tr>
+                <td colspan="2">De 1 a 2 ( )</td>
+                <td colspan="2">De 3 a 4 ( )</td>
+                <td colspan="2">De 5 o más ( )</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Número de personas por dormitorio: </b></td>
+            </tr>
+            <tr>
+                <td colspan="2">4 ó más personas ( )</td>
+                <td colspan="2">3 personas ( )</td>
+                <td colspan="2">1-2 personas ( )</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>V.- <u>ESTRUCTURA FAMILIAR</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear"><b>Nombre</b></td>
+                <td colspan="1" class="bordear"><b>Parentesco</b></td>
+                <td colspan="1" class="bordear"><b>Edad</b></td>
+                <td colspan="2" class="bordear"><b>Escolaridad</b></td>
+                <td colspan="2" class="bordear"><b>Ocupación</b></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="1" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+                <td colspan="2" class="bordear py-0 text-left">x</td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>VI.- <u>SALUD FAMILIAR</u>:</b> (parámetro a evaluar)</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="text-left"><b>Diagnóstico médico del paciente:</b></td>
+                <td colspan="6" class="text-left subrayar"><b></b>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Tiempo de tratamiento de la enfermedad del paciente: </b></td>
+            </tr>
+            <tr>
+                <td colspan="2">Más de 6 meses ( )</td>
+                <td colspan="2">De 3 a 6 meses ( )</td>
+                <td colspan="3">Menos de 3 meses o sin comorbilidad ( )</td>
+                <td colspan="1"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Otros problemas de salud del paciente, que se atienden en otra institución: </b></td>
+            </tr>
+            <tr>
+                <td colspan="1">Si ( )</td>
+                <td colspan="1">No ( )</td>
+                <td colspan="2">Nombre de la Institución</td>
+                <td colspan="4" class="subrayar"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left"><b>Número de enfermos o con discapacidad en el núcleo familiar: </b></td>
+            </tr>
+            <tr>
+                <td colspan="2">2 o principal proveedor económico ( )</td>
+                <td colspan="2">1 enfermo ( )</td>
+                <td colspan="2">0 enfermo ()</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="6" class="text-left"></td>
+                <td colspan="1" class="text-left"><b>Puntuación:</b></td>
+                <td colspan="1" class="subrayar text-left">100</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="120"></td>
+            </tr>
+            <tr>
+                <td colspan="8">3</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>VII.- <u>DIAGNÓSTICO SOCIAL</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar" height="130">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+            </tr>
+            <tr>
+                <td colspan="8" class="text-left bottom titulo"><b>VIII.- <u>PLAN DE ACCIÓN</u>:</b></td>
+            </tr>
+            <tr>
+                <td colspan="8" class="subrayar" height="130"></td>
+            </tr>
+            <tr>
+                <td colspan="8"></td>
+            </tr>
+            <tr>
+                <td colspan="8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="40"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="subrayar mx-4 px-2"></td>
+                <td colspan="2"></td>
+                <td colspan="3" class="subrayar mx-4 px-2"></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="mx-4 px-2"><b>NOMBRE Y FIRMA</b></td>
+                <td colspan="2"></td>
+                <td colspan="3" class="mx-4 px-2"><b>NOMBRE Y FIRMA</b></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="py-0"></td>
+                <td colspan="3" class="py-0">Lorem</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="10"></td>
+            </tr>
+            <tr>
+                <td colspan="5" class="py-0"></td>
+                <td colspan="3" class="py-0 dashed" height="80" style="line-height: 80px;">Lorem ipsum dolor sit amet.</td>
+            </tr>
+            <tr>
+                <td colspan="8" height="120"></td>
+            </tr>
+            <tr>
+                <td colspan="8">4</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="page-break"></div>
+</body>
+</html>

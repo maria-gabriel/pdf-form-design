@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+  .print-m-0 {
+    margin: 0 !important;
+  }
+}
+
+.toolbar {
+  background: #333;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+body {
+  margin: 0 20px 0 20px;
+  color: #333;
+  background-color: white;
+}
+
+.header-text {
+  font-size: 16px;
+  color: #807c83;
+  widows: 100%;
+}
+
+.header-text2 {
+  font-size: 18px;
+  color: #333;
+  widows: 100%;
+}
+
+.titulo {
+  font-size: 16px !important;
+}
+
+.titulo2 {
+  font-size: 18px !important;
+}
+
+.subrayar {
+  border-bottom: 1px solid black !important;
+}
+
+.bordear {
+  border-color: black !important;
+}
+.dashed {
+  border: #888 2px dashed;
+}
+.checke {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  border: 1px solid black;
+}
+.foto {
+  display: inline-block;
+  width: 65px;
+  height: 80px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+p {
+  margin-bottom: 0.2rem !important;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table-sm td {
+  text-align: left !important;
+  padding: 2px 8px 2px 8px !important;
+  font-size: 10px;
+}
+
+th,
+td {
+  border: 1px solid lavender;
+  width: 100px;
+  font-size: 12px;
+  padding: 10px 8px 10px 8px !important;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+td,
+.text-style {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+.nota {
+  font-size: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.nota-sm {
+  font-size: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.nota-xs {
+  font-size: 8px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.td-sm {
+  font-size: 12px !important;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.text-normal {
+  text-transform: none;
+}
+
+.bottom {
+  padding-bottom: 0.6rem;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #333;
+  text-align: center;
+}
